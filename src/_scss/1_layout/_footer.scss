@@ -1,0 +1,168 @@
+/*------------------------------------------------------------
+footer
+------------------------------------------------------------*/
+.c-footer {
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fafafa;
+
+    padding: 0;
+
+    .c-footer__link {
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        font-size: 1.4rem;
+        font-family: "Yu Gothic";
+
+        .c-footer__link-magrin {
+            background-color: #fff;
+            display: flex;
+            padding: 6px 100px;
+        }
+
+        .c-footer__text-link {
+            margin-left: 6px;
+        }
+
+        .c-footer__text--border {
+            border-bottom: 1px solid #000;
+        }
+
+        .bold {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin: 0 5px;
+        }
+    }
+
+    .c-footer__boxlink {
+        max-width: 1000px;
+        margin: 35px auto;
+        text-align: left;
+        display: flex;
+        justify-content: space-between;
+        font-size: 1.4rem;
+        font-family: "Yu Gothic";
+        letter-spacing: 0.1px;
+
+        .c-footer__text {
+            max-width: 300px;
+            line-height: 1.4;
+
+            .c-footer_pading {
+                padding-bottom: 5px;
+                margin-left: -1px;
+            }
+
+         
+            .ml-1 {
+                margin-left: 3px;
+            }
+
+            .ml-2 {
+                margin-left: -1px;
+            }
+          
+            .ml-3 {
+                margin-left: 4px;
+            }
+
+            .ml-4 {
+                margin-left: 4px;
+            }
+
+            .ml-5 {
+                margin-left: -3px;
+            }
+
+            .ml-6 {
+                margin-left: -2px;
+            }
+
+            .ml-7 {
+                margin-left: -1px;
+            }
+
+            .ml-8 {
+                margin-left: 3px;
+            }
+
+            .ml-9 {
+                margin-left: 3px;
+            }
+
+            .ml-10 {
+                margin-left: -4px;
+            }
+
+            .ml-11 {
+                margin-left: -1px;
+            }
+           
+
+            .c-footer__list {
+                list-style-type: none;
+
+                &.cirle {
+                    li {
+                        position: relative;
+                        padding-left: 11px;
+
+                        &::marker {
+                            display: none !important;
+                        }
+
+                        &::before {
+                            content: "";
+                            display: inline-block;
+                            width: 5px;
+                            height: 5px;
+                            border-radius: 50%;
+                            background: #000;
+                            position: absolute;
+                            left: 0;
+                            top: 6px;
+                        }
+                    }
+                }
+                
+               
+            }
+        }
+
+        span.c-footer__border {
+            display: block;
+            border: 1px solid #ccc;
+            width: 300px;
+            margin-bottom: 4px;
+        }
+
+       
+
+        .size-space {
+            font-size: 8px;
+            padding-right: 6px;
+            font-weight: bold;
+            margin-right: 1px;
+        }
+       
+    }
+
+
+    .c-footer__author {
+        margin-right: 0 auto;
+        border-top: 1px solid #ccc;
+        background-color: #ffff;
+        font-family: "Yu Gothic";
+
+        .c-footer__author-company {
+            font-size: 11.5px;
+            font-weight: 600;
+            line-height: 20px;
+            display: block;
+            padding: 16px 0 20px;
+          
+        }
+    }
+}

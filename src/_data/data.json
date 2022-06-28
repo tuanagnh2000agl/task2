@@ -1,0 +1,32 @@
+{
+  "linklists": {
+    "main": [
+      {
+        "title": "Home",
+        "url": "/home.html"
+      },
+      {
+        "title": "Home",
+        "url": "index.html"
+      },
+      {
+        "title": "Link 1",
+        "url": "link1.html"
+      },
+      {
+        "title": "Link 2",
+        "url": "link2.html"
+      },
+      {
+        "title": "Nested 1",
+        "url": "/nested/",
+        "links": [
+          {
+            "title": "Nested 2",
+            "url": "/nested/nested/"
+          }
+        ]
+      }
+    ]
+  }
+}
