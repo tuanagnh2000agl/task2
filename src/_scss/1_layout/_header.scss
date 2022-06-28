@@ -1,62 +1,80 @@
 /* Header
 ------------------------------------------------------------*/
 .c-header {
-    max-width: 1200px;
+    max-width: 1920px;
     margin: 0 auto;
-    padding: 20px 0 22px;
+    padding: 20px 0;
     position: relative;
     background: rgba(255, 255, 255, 0.9);
  
-    .c-main {
-        padding: 0;
-    
-        .l-container {
-            .c-gnav {
-                width: 100%;
-                max-width: 1000px;
-    
-                li {
-                    display: inline-block;
-            
-                    + li {
-                        margin-left: 29px;
-                    }
+    .l-container {
+        max-width: 1880px;
+        margin: 0 auto;
+
+        .c-home {
+            .c-home__baner {
+                position: relative;
+            }
+
+            .c-home__nav {
+                color: #fff;
+                position: absolute;
+                margin: 0 auto;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                h1 {
+                    margin-bottom: 78px;
                 }
-            
-                a {
-                    font-size: 1.4rem;
-                    text-transform: capitalize;
+
+                .c-home__nav--title {
+                    margin-bottom: 50px;
+
                 }
-    
-              
-            
-                .c-gnav__logo {
+
+                .c-home__text {
+                    margin-bottom: 90px;
+                    font-size: 14px;
+                    font-family: "Muli";
+                    color: rgb(255, 255, 255);
+                    font-weight: bold;
+                    line-height: 1.2;
+                    text-align: center;
+                }
+
+                .c-home__nlist {
+                    font-size: 14px;
+                    font-family: "Muli";
+                    color: rgb(255, 255, 255);
+                    font-weight: bold;
+                    line-height: 2.143;
                     display: flex;
-                    justify-content: space-between;
-                    align-items: center;
+
+                    ul {
+                        display: flex;
+                        flex-direction: row;
+
+                        li {
+                            margin: 0 22px;
+                        }
+                    }
+
+                    .c-home__icon {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        i {
+                            margin-right: 15px;
+                        }
+                    }
                    
                 }
-            
-                .c-gnav__link {
-                    font-size: 14px;
-                    font-family: "Yu Gothic";
-
-                    .c-gnav__link.is-bold {
-                        font-weight: bold;
-                    }
-
-                    .space {
-                        margin-right: 1px;
-                    }
-                }
-            
-                .c-gnav__space {
-                    margin-top: 18px;
-                    border: 1px solid #ccc;
-                    border-collapse: separate;
-                    background-color: #ccc;
-                }
-            
             }
         }
     }
