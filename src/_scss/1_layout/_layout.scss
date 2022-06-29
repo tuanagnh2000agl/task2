@@ -231,10 +231,187 @@ main.p-top {
         }
     }
 }
+// sweet
+main.p-sweet {
+    .c-cake {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 1000px;
+        padding-bottom: 70px;
+        border-bottom: 1px solid #ccc;
 
-section {
-    padding: 50px 0 90px;
+        .c-cake_adt {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            .c-cake__head {
+                margin-top: 70px;
+                margin-bottom: 44px;
+            }
+
+            .c-cake__content {
+                display: flex;
+                justify-content: center;
+               
+    
+                .c-cake__info {
+                    padding-right: 50px;
+
+                    .c-cake__title {
+                        margin-bottom: 24px;
+                    }
+
+                    .c-cake__button {
+                        display: inline-block;
+                        background-color: #642200;
+                        padding: 10px 53px;
+                    }
+
+                    p {
+                        margin-bottom: 54px;
+                    }
+                }
+            }
+        }
+
+    }
+
+    .c-fruit {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 1000px;
+        margin-top: 70px;
+        padding-bottom: 90px;
+        border-bottom: 1px solid #ccc;
+
+        .c-cake_adt {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            .c-cake__head {
+                margin-top: 70px;
+                margin-bottom: 44px;
+            }
+
+            .c-cake__content {
+                display: flex;
+                justify-content: center;
+
+                .c-cake__img {
+                    margin-right: 50px;
+                }
+
+                h3.c-cake__title {
+                    padding: 0 0 20px 16px;
+                }
+
+                p {
+                    padding-bottom: 58px;
+                }
+
+             
+            }
+
+            .c-cake__button {
+                display: inline-block;
+                background-color: #642200;
+                padding: 10px 53px;
+            }
+        }
+
+    }
+
+    .c-boxcook {
+        background-color: #fafafa;
+
+        margin: 90px auto 0;
+        width: 100%;
+        max-width: 1920px;
+
+        .c-boxcook__post {
+            padding: 90px 0;
+            width: 1000px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            h3 {
+                margin-bottom: 44px;
+            }
+
+            .c-boxcook__content {
+                margin-top: 46px;
+
+                .c-boxcook__work {
+                    padding-bottom: 16px;
+                    border-bottom: 2px dotted #642200;
+                    margin-bottom: 16px;
+                }
+            }
+        }
+    }
+
+    .c-about {
+        width: 100%;
+        max-width: 1000px;
+        margin: 90px auto;
+
+        .c-about__info {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            .c-about__card {
+                width: 100%;
+                max-width: 1000px;
+                display: flex;
+                justify-content: space-between;
+
+                .u-card {
+                    border: #ccc 1px solid;
+                    padding: 42px 8px 22px 10px;
+                    margin: 50px 0;
+                  
+
+                    width: 320px;
+
+                    .c-about__logo {
+                        width: 100%;
+                        max-width: 80px;
+                        margin: 0 auto;
+                        margin-bottom: 40px;
+                    }
+    
+                    h4 {
+                        padding-bottom: 10px;
+                        margin-bottom: 10px;
+                        border-bottom: #642200 2px dotted;
+                    }
+                }
+
+            }
+           
+
+        }
+
+        .c-about__btn {
+            display: inline-block;
+            background-color: #642200;
+            padding: 10px 53px;
+        }
+    }
+
+
+
 }
+
 
 //-------------------------------------------------------
 .l-container {
