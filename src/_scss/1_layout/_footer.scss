@@ -2,53 +2,59 @@
 footer
 ------------------------------------------------------------*/
 .c-footer {
+    width: 100%;
     max-width: 1920px;
     margin: 0 auto;
 
-    .c-end__baner {
-        position: relative;
-    }
+    .c-end {
+        background-image: url("./assets/img/footer.png");
+        background-repeat: no-repeat;
+        background-size: cover;
 
-    .c-end__nav {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 28px;
-      
-        .c-end__border1 {
-            margin: 30px 0 40px;
-        }
+        .c-end__nav {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
 
-        .c-end__nav--title {
-            margin-bottom: 38px;
-        }
-
-        .c-end__border2 {
-            margin-bottom: 0;
-            margin-top: 0;
-        }
-
-        .c-end__icon {
-            margin: 20px 0;
-            color: #fff;
-
-            i {
-                margin: 0 11px;
-                font-size: 12px;
-                font-weight: 500;
-                line-height: 30px;
+            .c-end__nav--logo {
+                margin-top: 69px;
             }
-        }
 
-        .c-end__text {
-            // margin-top: 36px;
-        }
+            .c-end__border1 {
+                margin: 30px 0 40px;
+            }
+    
+            .c-end__nav--title {
+                margin-bottom: 40px;
+            }
+    
+            .c-end__border2 {
+                margin-bottom: 0;
+                margin-top: 0;
+            }
+    
+            .c-end__icon {
+                margin: 16px 0 30px;
+                color: #fff;
+    
+                i {
+                    margin: 0 11px;
+                    font-size: 12px;
+                    font-weight: 500;
+                    line-height: 30px;
+                }
+            }
 
-     
+            .c-end__text {
+                margin-bottom: 90px;
+            }
+    
+         
+    
+         
+        }
     }
+
+  
 }
