@@ -15,37 +15,63 @@ body {
     margin: 0;
     padding: 0;
 }
-
-.p-top {
+// home
+main.p-top {
     .c-bg {
         padding: 0;
 
         .l-container {
             display: flex;
-
+            justify-content: center;
 
             .c-bg__ticker1 {
                 .c-bg__baner {
                     position: relative;
+
+                    .c-bg__logo {
+                        .c-bg__text {
+                            p {
+                                font-size: 14px;
+                                font-family: "Muli";
+                                color: rgb(100, 34, 0);
+                                line-height: 60px;
+                                font-weight: 500;
+                            }
+                            display: flex;
+                            flex-direction: column;
+                            align-items: flex-start;
+                            padding-left: 69px;
+                            justify-content: center;
+                            width: 100%;
+                            max-width: 520px;
+                            height: 100%;
+                            max-height: 244px;
+                            background-color: rgb(255, 255, 255);
+                            opacity: 0.8;
+                            position: absolute;
+                            left: 50%;
+                            top: 50%;
+                            transform: translate(-50%, -50%);
+
+                            span {
+                                margin-top: 26px;
+                                display: flex;
+                                align-items: center;
+                                border: 1px solid #642200;
+                                text-align: center;
+                                padding: 9px 75px;
+                            }
+                        }
+                     
+                    }
+
+                    .c-bg__icon {
+                        position: absolute;
+                        top: -15px;
+                        right: 30px;
+                    }
                 }
 
-                .c-bg__logo {
-                    .c-bg__text {
-                        display: flex;
-                        flex-direction: column;
-                        align-items: center;
-                        justify-content: center;
-                        width: 520px;
-                        height: 244px;
-                        background-color: rgb(255, 255, 255);
-                        opacity: 0.8;
-                        position: absolute;
-                        left: 50%;
-                        top: 50%;
-                        transform: translate(-50%, -50%);
-                    }
-                 
-                }
             }
 
             .c-bg__ticker2 {
@@ -55,7 +81,11 @@ body {
 
                 .c-bg__logo {
                     .c-bg__text {
-                        display: inline;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: flex-start;
+                        padding-left: 69px;
                         width: 520px;
                         height: 244px;
                         background-color: rgb(255, 255, 255);
@@ -64,10 +94,140 @@ body {
                         left: 50%;
                         top: 50%;
                         transform: translate(-50%, -50%);
+
+                        span {
+                            margin-top: 26px;
+                            display: flex;
+                            align-items: center;
+                            border: 1px solid #642200;
+                            text-align: center;
+                            padding: 9px 75px;
+                        }
                     }
                  
                 }
             }
+        }
+    }
+
+    .c-bg1 {
+        padding: 0;
+
+        .l-container {
+            display: flex;
+            justify-content: center;
+
+            .c-bg1__background {
+                position: relative;
+
+                .c-bg1__characters {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    display: flex;
+                    justify-content: space-between;
+
+                    .c-bg1__heading {
+                        padding: 0 56px 0 20px;
+                    }
+
+                    .c-bg1__button {
+                        padding-top: 20px;
+                        
+                        .c-bg1__text {
+                            display: flex;
+                            flex-direction: row;
+                        }
+
+                        .c-bg1__btn {
+                            margin-top: 40px;
+                            display: inline-flex;
+                            justify-content: center;
+                            align-items: center;
+                            padding: 8px 72.5px;
+                            background-color: #642200;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .c-bg2 {
+        padding: 0;
+
+        .l-container {
+            width: 100%;
+            max-width: 1920px;
+            display: flex;
+            justify-content: center;
+
+            .c-bg2__background {
+                background-color: #ff9c46;
+                width: 100%;
+                max-width: 1920px;
+                height: 696px;
+                display: flex;
+
+                .c-bg2__info {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    margin: 0 auto;
+
+                    .c-bg2__dish {
+                        margin-top: 20px;
+                        display: flex;
+                        flex-direction: row;
+
+                        .c-dish1 {
+                            text-align: center;
+                            width: 100%;
+                            max-width: 300px;
+
+                            ~.c-dish1 {
+                                margin-left: 50px;
+                            }
+
+                           
+                        }
+
+                    }
+
+                    .c-dish__img {
+                        position: relative;
+                        margin-bottom: 15px;
+
+                    
+
+                        .c-dish__menu {
+                            position: absolute;
+                            top: 1px;
+                            left: 0;
+
+                           
+                        }
+
+                        .c-dish__time {
+                            display: flex;
+                            flex-direction: column;
+                            position: absolute;
+                            top: 16px;
+                            right: 10px;
+                        }
+                    }
+
+                    .c-bg2__btn {
+                        margin-top: 48px;
+                        background-color: #642200;
+                        padding: 8px 100px;
+                    }
+                }
+            }
+
+           
         }
     }
 }
