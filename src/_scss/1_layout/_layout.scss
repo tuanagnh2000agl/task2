@@ -2,7 +2,7 @@
 ------------------------------------------------------------*/
 body {
     margin: 0 auto;
-    font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+    font-family: "Yu Gothic";
     // min-width: $base-width;
     line-height: 1.5;
     @include sp {
@@ -53,7 +53,12 @@ main.p-top {
                             top: 50%;
                             transform: translate(-50%, -50%);
 
-                            span {
+                            a {
+                                font-size: 16px;
+                                font-weight: 500;
+                                color: rgb(100, 34, 0);
+                                line-height: 2.25;
+                                text-align: center;
                                 margin-top: 26px;
                                 display: flex;
                                 align-items: center;
@@ -97,7 +102,12 @@ main.p-top {
                         top: 50%;
                         transform: translate(-50%, -50%);
 
-                        span {
+                        a {
+                            font-weight: 500;
+                            font-size: 16px;
+                            color: rgb(100, 34, 0);
+                            line-height: 2.25;
+                            text-align: center;
                             margin-top: 26px;
                             display: flex;
                             align-items: center;
@@ -143,12 +153,21 @@ main.p-top {
                         }
 
                         .c-bg1__btn {
+                            font-size: 16px;
+                            font-family: "Yu Gothic";
+                            color: rgb(255, 255, 255);
+                            line-height: 2.25;
+                            text-align: center;
                             margin-top: 40px;
                             display: inline-flex;
                             justify-content: center;
                             align-items: center;
-                            padding: 8px 72.5px;
                             background-color: #642200;
+                            padding: 8px 72.5px;
+
+                            &:hover {
+                                opacity: 0.8;
+                            }
                         }
                     }
                 }
@@ -222,9 +241,17 @@ main.p-top {
                     }
 
                     .c-bg2__btn {
+                        font-size: 16px;
+                        color: rgb(255, 255, 255);
+                        line-height: 2.25;
+                        text-align: center;
                         margin-top: 48px;
                         background-color: #642200;
                         padding: 8px 100px;
+
+                        &:hover {
+                            opacity: 0.8;
+                        }
                     }
                 }
             }
@@ -269,6 +296,10 @@ main.p-sweet {
                         display: inline-block;
                         background-color: #642200;
                         padding: 10px 53px;
+
+                        &:hover {
+                            opacity: 0.8;
+                        }
                     }
 
                     p {
@@ -322,6 +353,10 @@ main.p-sweet {
                 display: inline-block;
                 background-color: #642200;
                 padding: 10px 53px;
+
+                &:hover {
+                    opacity: 0.8;
+                }
             }
         }
 
@@ -407,6 +442,10 @@ main.p-sweet {
             display: inline-block;
             background-color: #642200;
             padding: 10px 53px;
+
+            &:hover {
+                opacity: 0.8;
+            }
         }
     }
 
