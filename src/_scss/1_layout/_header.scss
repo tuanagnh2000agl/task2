@@ -1,6 +1,7 @@
 /* Header
 ------------------------------------------------------------*/
 .c-header {
+    width: 100%;
     max-width: 1920px;
     margin: 0 auto;
     padding: 20px 0;
@@ -8,58 +9,71 @@
     background: rgba(255, 255, 255, 0.9);
  
     .l-container {
+        width: 100%;
         max-width: 1880px;
         margin: 0 auto;
 
         .c-home {
             background-image: url("./assets/img/image1.png");
             background-repeat: no-repeat;
-            background-size: cover;
 
             .c-home__nav {
                 color: #fff;
-                margin: auto;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                padding: 250px;
+                padding: 244px 0 247px;
 
                 h1 {
-                    margin-bottom: 78px;
+                    margin: 10px 3px 74px 0;
                 }
 
                 .c-home__nav--title {
-                    margin-bottom: 50px;
-
+                    // font-size: 36px;
+                    // font-family: "Yu Mincho";
+                    // color: rgb(255, 255, 255);
+                    // line-height: 1.2;
+                    // letter-spacing: 12px;
+                    // text-align: center;
+                    margin-bottom: 44px;
+                    margin-right: 4px;
+                    
                 }
 
                 .c-home__text {
-                    margin-bottom: 90px;
+                    margin-bottom: 79px;
                     font-size: 14px;
                     font-family: "Muli";
                     color: rgb(255, 255, 255);
                     font-weight: bold;
                     line-height: 1.2;
                     text-align: center;
+                    word-spacing: 2.6px;
+                    letter-spacing: 1.9px;
+
                 }
 
+                
                 .c-home__nlist {
                     font-size: 14px;
                     font-family: "Muli";
                     color: rgb(255, 255, 255);
-                    font-weight: bold;
                     line-height: 2.143;
                     display: flex;
+                    font-weight: 500;
+                    text-align: left;
+                    margin-right: 4px;
+                    transform: translateX(-13px);
 
                     ul {
                         display: flex;
                         flex-direction: row;
 
                         li {
-                            margin: 0 22px;
-
                             a {
+                                letter-spacing: 1px;
+                                padding: 0 25px;
                                 position: relative;
 
                                 &::after {
@@ -84,14 +98,14 @@
                     }
 
                     .c-home__icon {
-                        margin-left: 40px;
+                        margin-left: 20px;
                         display: flex;
                         justify-content: space-between;
                         align-items: center;
 
                         i {
                             margin-right: 15px;
-                            font-size: 12px;
+                            font-size: 35px;
                             font-weight: 500;
                             line-height: 30px;
                         }
@@ -104,24 +118,43 @@
     
 }
 
+// 
+@media(max-width: 1024px) {
+    .c-header {
+        .l-container {
+            .c-home {
+                .c-home__nav {
+                    .c-home__nlist {
+                    }
+                }
+            }
+        }
+        
+    }
+ 
+}
+
+// 768
+
+
+
+// 375
 
 // sweet
 .c-header__sweet {
     max-width: 1920px;
     margin: 0 auto;
-    padding: 20px 0;
     position: relative;
     background: rgba(255, 255, 255, 0.9);
  
     .l-container {
-        max-width: 1880px;
         margin: 0 auto;
 
         .c-home {
-            background-image: url("./assets/img/sweet/image_bg.png");
+            background: url("./assets/img/sweet/image_bg.png") center;
             background-repeat: no-repeat;
-            background-size: cover;
-
+            padding: 0 0 114px;
+            
             .c-home__nav {
                 color: #fff;
                 margin: auto;
@@ -129,10 +162,11 @@
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                padding: 250px;
 
                 h1 {
-                    margin-bottom: 78px;
+                    margin-top: 120px;
+                    margin-bottom: 84px;
+                    letter-spacing: 2px;
                 }
 
                 .c-home__nav--title {
@@ -154,18 +188,22 @@
                     font-size: 14px;
                     font-family: "Muli";
                     color: rgb(255, 255, 255);
-                    font-weight: bold;
                     line-height: 2.143;
                     display: flex;
+                    font-weight: 500;
+                    text-align: left;
+                    margin-right: 4px;
+                    transform: translateX(6px);
+                    letter-spacing: 1px;
 
                     ul {
                         display: flex;
                         flex-direction: row;
 
                         li {
-                            margin: 0 22px;
-
                             a {
+                                letter-spacing: 1px;
+                                padding: 0 25px;
                                 position: relative;
 
                                 &::after {
@@ -190,14 +228,14 @@
                     }
 
                     .c-home__icon {
-                        margin-left: 40px;
+                        margin-left: 20px;
                         display: flex;
                         justify-content: space-between;
                         align-items: center;
 
                         i {
                             margin-right: 15px;
-                            font-size: 12px;
+                            font-size: 35px;
                             font-weight: 500;
                             line-height: 30px;
                         }

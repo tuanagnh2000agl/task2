@@ -2,7 +2,7 @@
 ------------------------------------------------------------*/
 body {
     margin: 0 auto;
-    font-family: "Yu Gothic";
+    font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
     // min-width: $base-width;
     line-height: 1.5;
     @include sp {
@@ -31,11 +31,18 @@ main.p-top {
                     .c-bg__logo {
                         .c-bg__text {
                             p {
+                                margin-top: -24px;
+                                margin-bottom: -2px;
                                 font-size: 14px;
                                 font-family: "Muli";
                                 color: rgb(100, 34, 0);
                                 line-height: 60px;
-                                font-weight: 500;
+                                font-weight: 600;
+                                letter-spacing: 1px;
+
+                                span {
+                                    letter-spacing: 0.4px;
+                                }
                             }
                             display: flex;
                             flex-direction: column;
@@ -53,27 +60,45 @@ main.p-top {
                             top: 50%;
                             transform: translate(-50%, -50%);
 
+                            h2 {
+                                // transform: translate(-2px, -4px);
+                                // font-size: 36px;
+                                // letter-spacing: 1px;
+                                // font-family: "Yu Mincho";
+                                // color: rgb(100, 34, 0);
+                                // line-height: 1.25;
+                                margin-bottom: 27px;
+
+                                span {
+                                    margin-left: 4px;
+
+                                    span {
+                                        margin-left: -8px;
+                                    }
+                                }
+                            }
+
                             a {
-                                font-size: 16px;
+                                font-size: 14px;
                                 font-weight: 500;
                                 color: rgb(100, 34, 0);
                                 line-height: 2.25;
                                 text-align: center;
-                                margin-top: 26px;
                                 display: flex;
                                 align-items: center;
                                 border: 1px solid #642200;
                                 text-align: center;
-                                padding: 9px 75px;
+                                padding: 0 74px;
                             }
                         }
                      
                     }
+                      
 
                     .c-bg__icon {
                         position: absolute;
                         top: -15px;
-                        right: 30px;
+                        right: 31px;
                     }
                 }
 
@@ -102,18 +127,31 @@ main.p-top {
                         top: 50%;
                         transform: translate(-50%, -50%);
 
+                        p {
+                            margin-bottom: 12px;                            
+                        }
+
+                        h2 {
+                            display: inline-block;
+                            font-size: 36px;
+                            font-family: "Yu Mincho";
+                            color: rgb(100, 34, 0);
+                            line-height: 1.25;
+                        }
+
                         a {
                             font-weight: 500;
-                            font-size: 16px;
+                            font-size: 14px;
                             color: rgb(100, 34, 0);
                             line-height: 2.25;
                             text-align: center;
-                            margin-top: 26px;
+                            margin-top: 18px;
                             display: flex;
                             align-items: center;
                             border: 1px solid #642200;
                             text-align: center;
-                            padding: 9px 75px;
+                            padding: 0 74px;
+
                         }
                     }
                  
@@ -124,28 +162,30 @@ main.p-top {
 
     .c-bg1 {
         padding: 0;
+        background-color: #fff3e1;
+        width: 100%;
+        max-width: 1920px;
+        margin: 0 auto;
+        padding: 88px 0 91px;
 
         .l-container {
-            display: flex;
-            justify-content: center;
-
             .c-bg1__background {
-                position: relative;
+                display: flex;
+                justify-content: center;
 
                 .c-bg1__characters {
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
                     display: flex;
+                    justify-content: center;
+                    align-items: center;
                     justify-content: space-between;
 
                     .c-bg1__heading {
-                        padding: 0 56px 0 20px;
+                        padding: 0 53px 0 20px;
+                        transform: translate(-2px, -72px);
                     }
 
                     .c-bg1__button {
-                        padding-top: 20px;
+                        padding-top: 8px;
                         
                         .c-bg1__text {
                             display: flex;
@@ -163,7 +203,7 @@ main.p-top {
                             justify-content: center;
                             align-items: center;
                             background-color: #642200;
-                            padding: 8px 72.5px;
+                            padding: 0 69px;
 
                             &:hover {
                                 opacity: 0.8;
@@ -187,9 +227,8 @@ main.p-top {
             .c-bg2__background {
                 background-color: #ff9c46;
                 width: 100%;
-                max-width: 1920px;
-                height: 696px;
                 display: flex;
+                padding: 90px 0;
 
                 .c-bg2__info {
                     display: flex;
@@ -198,8 +237,12 @@ main.p-top {
                     flex-direction: column;
                     margin: 0 auto;
 
+                    .c-bg2__image-heding {
+                        margin-top: 0;
+                    }
+
                     .c-bg2__dish {
-                        margin-top: 20px;
+                        margin-top: 48px;
                         display: flex;
                         flex-direction: row;
 
@@ -212,6 +255,11 @@ main.p-top {
                                 margin-left: 50px;
                             }
 
+                            .is-boder {
+                                padding-bottom: 4px;
+                                border-bottom: rgb(100, 34, 0) 1px solid;
+                                margin-bottom: 20px;
+                            }
                            
                         }
 
@@ -234,9 +282,10 @@ main.p-top {
                         .c-dish__time {
                             display: flex;
                             flex-direction: column;
+                            align-items: flex-start;
                             position: absolute;
-                            top: 16px;
-                            right: 10px;
+                            top: 15px;
+                            right: 11px;
                         }
                     }
 
@@ -245,12 +294,16 @@ main.p-top {
                         color: rgb(255, 255, 255);
                         line-height: 2.25;
                         text-align: center;
-                        margin-top: 48px;
+                        margin-top: 35px;
                         background-color: #642200;
-                        padding: 8px 100px;
+                        padding: 0 100px;
 
                         &:hover {
                             opacity: 0.8;
+                        }
+
+                        span {
+                            margin-right: 6px;
                         }
                     }
                 }
@@ -259,6 +312,148 @@ main.p-top {
            
         }
     }
+}
+
+// 
+@media only screen and (max-width: 1024px) {
+    main.p-top {
+        .c-bg {
+            width: 100%;
+            max-width: 960px;
+            margin: 0 auto;
+
+            .l-container {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+
+                .c-bg__ticker1 {
+                    .c-bg__baner {
+                        position: relative;
+    
+                        .c-bg__logo {
+                            .c-bg__text {
+                                display: flex;
+                                align-items: center;
+                                padding: 0;
+
+                                a {
+                                    background-color: #642200;
+                                    color: #fff;
+                                }
+                            }
+                         
+                        }
+    
+                        .c-bg__icon {
+                            display: none;
+                        }
+                    }
+    
+                }
+    
+                .c-bg__ticker2 {
+                    .c-bg__baner {
+                        position: relative;
+    
+                        .c-bg__logo {
+                            .c-bg__text {
+                                display: flex;
+                                align-items: center;
+                                padding: 0;
+
+                                a {
+                                    background-color: #642200;
+                                    color: #fff;
+                                }
+                            }
+                         
+                        }
+    
+                        .c-bg__icon {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    
+        .c-bg1 {
+            .l-container {
+                .c-bg1__background {
+                    .c-bg1__characters {
+                        width: 100%;
+                        max-width: 960;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+    
+                        .c-bg1__heading {
+                            padding: 0 53px 0 20px;
+                            transform: translate(-2px, -72px);
+                        }
+    
+                        .c-bg1__button {
+                            padding-top: 8px;
+                            
+                            .c-bg1__text {
+                                display: flex;
+                                flex-direction: row;
+                            }
+    
+                            .c-bg1__btn {
+                                font-size: 16px;
+                                font-family: "Yu Gothic";
+                                color: rgb(255, 255, 255);
+                                line-height: 2.25;
+                                text-align: center;
+                                margin-top: 40px;
+                                display: inline-flex;
+                                justify-content: center;
+                                align-items: center;
+                                background-color: #642200;
+                                padding: 0 69px;
+    
+                                &:hover {
+                                    opacity: 0.8;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    
+        .c-bg2 {
+            padding: 0;
+    
+            .l-container {
+                display: flex;
+                justify-content: center;
+    
+                .c-bg2__background {
+                    .c-bg2__info {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-direction: column;
+                        margin: 0 auto;
+
+                        .c-bg2__dish {
+                            margin-top: 48px;
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            justify-content: center;
+                            flex-wrap: wrap;
+                        }
+                    }
+                }
+    
+               
+            }
+        }
+    }  
 }
 // sweet
 main.p-sweet {
@@ -276,8 +471,7 @@ main.p-sweet {
             flex-direction: column;
 
             .c-cake__head {
-                margin-top: 70px;
-                margin-bottom: 44px;
+                margin: 86px 3px 51px 0;;
             }
 
             .c-cake__content {
@@ -289,7 +483,7 @@ main.p-sweet {
                     padding-right: 50px;
 
                     .c-cake__title {
-                        margin-bottom: 24px;
+                        margin-bottom: 27px;
                     }
 
                     .c-cake__button {
@@ -303,7 +497,7 @@ main.p-sweet {
                     }
 
                     p {
-                        margin-bottom: 54px;
+                        margin-bottom: 50px;
                     }
                 }
             }
@@ -316,8 +510,7 @@ main.p-sweet {
         width: 100%;
         max-width: 1000px;
         margin-top: 70px;
-        padding-bottom: 90px;
-        border-bottom: 1px solid #ccc;
+        padding-bottom: 78px;
 
         .c-cake_adt {
             display: flex;
@@ -339,7 +532,7 @@ main.p-sweet {
                 }
 
                 h3.c-cake__title {
-                    padding: 0 0 20px 16px;
+                    padding-bottom: 27px;
                 }
 
                 p {
@@ -352,7 +545,8 @@ main.p-sweet {
             .c-cake__button {
                 display: inline-block;
                 background-color: #642200;
-                padding: 10px 53px;
+                padding: 10px 56px;
+                transform: translate(-39px, -10px);
 
                 &:hover {
                     opacity: 0.8;
@@ -365,12 +559,12 @@ main.p-sweet {
     .c-boxcook {
         background-color: #fafafa;
 
-        margin: 90px auto 0;
+        margin: 0 auto;
         width: 100%;
         max-width: 1920px;
 
         .c-boxcook__post {
-            padding: 90px 0;
+            padding: 92px 0 90px;
             width: 1000px;
             margin: 0 auto;
             display: flex;
@@ -379,16 +573,42 @@ main.p-sweet {
             flex-direction: column;
 
             h3 {
-                margin-bottom: 44px;
+                margin-bottom: 50px;
+                margin-left: -4px;
+            }
+
+            .is_mr {
+                image-rendering: pixelated;
             }
 
             .c-boxcook__content {
-                margin-top: 46px;
+                margin-top: 49px;
+                margin-left: -6px;
 
                 .c-boxcook__work {
-                    padding-bottom: 16px;
+                    padding-bottom: 14px;
                     border-bottom: 2px dotted #642200;
-                    margin-bottom: 16px;
+                    margin-bottom: 6px;
+                }
+
+                .c-boxcook__text {
+                    font-size: 15px;
+                    font-family: "YuGothic";
+                    color: rgb(0, 0, 0);
+                    line-height: 30px;
+                    font-weight: 500;
+                    width: 840px;
+                    height: 314px;
+                    letter-spacing: 0.4px;
+
+                    span {
+                        display: block;
+
+                    }
+
+                    .is-pd {
+                        margin-top: 30px;
+                    }
                 }
             }
         }
@@ -405,6 +625,10 @@ main.p-sweet {
             align-items: center;
             flex-direction: column;
 
+            .is-top {
+                margin-top: 7px;
+            }
+
             .c-about__card {
                 width: 100%;
                 max-width: 1000px;
@@ -413,7 +637,7 @@ main.p-sweet {
 
                 .u-card {
                     border: #ccc 1px solid;
-                    padding: 42px 8px 22px 10px;
+                    padding: 59px 8px 33px 18px;
                     margin: 50px 0;
                   
 
@@ -423,12 +647,13 @@ main.p-sweet {
                         width: 100%;
                         max-width: 80px;
                         margin: 0 auto;
-                        margin-bottom: 40px;
+                        margin-bottom: 12px;
+                        transform: translate(9px, -23px);
                     }
     
                     h4 {
-                        padding-bottom: 10px;
-                        margin-bottom: 10px;
+                        padding-bottom: 20px;
+                        margin-bottom: 18px;
                         border-bottom: #642200 2px dotted;
                     }
                 }
@@ -441,7 +666,7 @@ main.p-sweet {
         .c-about__btn {
             display: inline-block;
             background-color: #642200;
-            padding: 10px 53px;
+            padding: 10px 73px;
 
             &:hover {
                 opacity: 0.8;
